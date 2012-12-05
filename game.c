@@ -27,21 +27,14 @@ int main()
 	int highlight = 1;
 	int choice = 0;
 	int r;
-	char a,b,c,d,e,f,g;
-	a='0';
-	b='1';
-	c='3';
-	d='2';
-	e='9';
-	f='4';
-	g='5';
+	char c;
 
 	initscr();
 	clear();
 	noecho();
 	cbreak();	/* Line buffering disabled. pass on everything */
-	startx = (80 - WIDTH) / 2;
-	starty = (24 - HEIGHT) / 2;
+	startx = 70;//(80 - WIDTH) ;
+	starty = 10;//(24 - HEIGHT) ;
 
 	menu_win = newwin(HEIGHT, WIDTH, starty, startx);
 	keypad(menu_win, TRUE);
